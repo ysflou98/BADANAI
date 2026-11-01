@@ -6,6 +6,10 @@
 <meta name="theme-color" content="#121212">
 <title>Autocarrozzeria Badanai – Autoriparazioni dal 1981</title>
 <meta name="description" content="Autocarrozzeria Badanai: carrozzeria, meccatronica, gommista, wrapping, tuning e molto altro. Professionalità, puntualità e precisione dal 1981.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoBodyShop","name":"Autocarrozzeria Badanai","telephone":"+39 0773 756306","email":"info@autocarrozzeriabadanai.com","vatID":"IT03249820592","foundingDate":"1981",
+"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"13:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"14:30","closes":"18:30"}]}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -197,6 +201,24 @@ textarea{min-height:130px;resize:vertical}
 .field.bad .err{display:block}
 .ok{display:none;margin-top:1rem;padding:1rem 1.1rem;border-radius:12px;background:rgba(80,200,120,.12);border:1px solid rgba(80,200,120,.4);color:#a8e8c0;font-weight:600;font-size:.92rem}
 
+/* Orari */
+.hours{margin-top:2rem;padding-top:1.6rem;border-top:1px solid var(--line-accent)}
+.hours h4{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:#fff;margin-bottom:.9rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.6rem}
+.status{display:inline-flex;align-items:center;gap:.45rem;font-size:.78rem;letter-spacing:0;text-transform:none;font-weight:600;padding:.28rem .75rem;border-radius:999px;background:rgba(0,0,0,.35);border:1px solid var(--line);color:var(--muted)}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:#7d788a}
+.status.open{color:#a8e8c0;border-color:rgba(80,200,120,.45)}
+.status.open::before{background:#5fd68a;box-shadow:0 0 0 3px rgba(95,214,138,.2)}
+.status.closed{color:#ffb4a8;border-color:rgba(255,138,122,.4)}
+.status.closed::before{background:#ff8a7a}
+.hours ul{list-style:none}
+.hours li{display:flex;justify-content:space-between;gap:1rem;padding:.45rem .75rem;border-radius:9px;font-size:.92rem;color:#cfcad8;transition:background .2s}
+.hours li span:last-child{font-weight:600;color:#fff;text-align:right}
+.hours li.off span:last-child{color:var(--muted);font-weight:500}
+.hours li.today{background:rgba(243,156,59,.16);color:#fff}
+.hours li.today span:first-child{font-weight:700}
+.consent-link{color:var(--accent);font-weight:600}
+.consent-link:hover{text-decoration:underline}
+
 /* Footer */
 footer{background:#0a0a0c;border-top:1px solid var(--line-accent);padding:3rem 0 1.6rem;color:var(--muted);font-size:.9rem}
 .foot{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:2rem;margin-bottom:2rem}
@@ -344,7 +366,7 @@ footer{background:#0a0a0c;border-top:1px solid var(--line-accent);padding:3rem 0
 <!-- Top bar -->
 <div class="topbar">
   <div class="container">
-    <span class="tag">Autoriparazioni dal 1981</span>
+    <span class="tag">Lun–Ven 08:00–13:00 · 14:30–18:30</span>
     <div class="links">
       <a href="tel:+390773756306"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>+39 0773 756306</a>
       <a href="mailto:info@autocarrozzeriabadanai.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>info@autocarrozzeriabadanai.com</a>
@@ -473,6 +495,19 @@ footer{background:#0a0a0c;border-top:1px solid var(--line-accent);padding:3rem 0
         <p>Preferisci sentirci direttamente? Chiamaci o scrivici, siamo a tua disposizione.</p>
         <div class="info-row"><span class="ib"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><a href="tel:+390773756306">+39 0773 756306</a></div>
         <div class="info-row"><span class="ib"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span><a href="mailto:info@autocarrozzeriabadanai.com">info@autocarrozzeriabadanai.com</a></div>
+
+        <div class="hours" id="hours">
+          <h4>Orari di apertura <span class="status" id="openStatus" role="status">…</span></h4>
+          <ul>
+            <li data-d="1"><span>Lunedì</span><span>08:00–13:00 · 14:30–18:30</span></li>
+            <li data-d="2"><span>Martedì</span><span>08:00–13:00 · 14:30–18:30</span></li>
+            <li data-d="3"><span>Mercoledì</span><span>08:00–13:00 · 14:30–18:30</span></li>
+            <li data-d="4"><span>Giovedì</span><span>08:00–13:00 · 14:30–18:30</span></li>
+            <li data-d="5"><span>Venerdì</span><span>08:00–13:00 · 14:30–18:30</span></li>
+            <li data-d="6" class="off"><span>Sabato</span><span>Chiuso</span></li>
+            <li data-d="0" class="off"><span>Domenica</span><span>Chiuso</span></li>
+          </ul>
+        </div>
       </aside>
 
       <form id="quote" class="glass rv" style="--d:.1s" novalidate>
@@ -488,7 +523,7 @@ footer{background:#0a0a0c;border-top:1px solid var(--line-accent);padding:3rem 0
           <select id="servizio" name="servizio"><option value="">Seleziona un servizio</option></select>
         </div>
         <div class="field"><label for="msg">Messaggio *</label><textarea id="msg" name="msg" required></textarea><div class="err">Scrivici qualche dettaglio.</div></div>
-        <label class="check"><input type="checkbox" id="priv" required><span>Acconsento al trattamento dei miei dati personali per essere ricontattato in merito alla richiesta.</span></label>
+        <label class="check"><input type="checkbox" id="priv" required><span>Ho letto l’<a class="consent-link" href="privacy.html" target="_blank" rel="noopener">informativa privacy</a> e acconsento al trattamento dei miei dati personali per essere ricontattato in merito alla richiesta.</span></label>
         <div class="field" id="privf" style="margin:-1rem 0 1rem"><div class="err">Il consenso è necessario per inviare la richiesta.</div></div>
         <button class="btn" type="submit">Invia richiesta</button>
         <div class="ok" id="ok" role="status">Grazie! Si è aperto il tuo programma di posta con la richiesta pronta da inviare.</div>
@@ -516,7 +551,7 @@ footer{background:#0a0a0c;border-top:1px solid var(--line-accent);padding:3rem 0
     </div>
     <div class="legal">
       <span>© <span id="yr">2026</span> Autocarrozzeria Badanai. Tutti i diritti riservati.</span>
-      <span>Informazioni legali · Privacy · Cookie</span>
+      <span><a href="privacy.html#titolare">Informazioni legali</a> · <a href="privacy.html">Privacy</a> · <a href="cookie.html">Cookie</a></span>
     </div>
   </div>
 </footer>
@@ -591,6 +626,7 @@ sel.insertAdjacentHTML('beforeend','<option>Altro</option>');
 
 // FAQ
 const FAQ=[
+  ['Quali sono gli orari di apertura?','Siamo aperti dal lunedì al venerdì, dalle 08:00 alle 13:00 e dalle 14:30 alle 18:30. Il sabato e la domenica siamo chiusi.'],
   ['Come posso richiedere un preventivo?','Compila il modulo qui sotto, scrivici a <a href="mailto:info@autocarrozzeriabadanai.com">info@autocarrozzeriabadanai.com</a> oppure chiamaci al <a href="tel:+390773756306">+39 0773 756306</a>. Ti ricontatteremo con una valutazione per il tuo veicolo.'],
   ['Offrite una vettura di cortesia durante la riparazione?','Sì, tra i nostri servizi c’è la vettura di cortesia, oltre all’auto sostitutiva interna con noleggio a lungo termine. Per disponibilità e condizioni contattaci.'],
   ['Vi occupate delle pratiche con l’assicurazione?','Sì, offriamo la gestione dei sinistri e una consulenza legale. Contattaci con i dettagli dell’accaduto e ti diremo come procedere.'],
@@ -657,6 +693,32 @@ form.addEventListener('submit',e=>{
   form.reset();
 });
 document.getElementById('yr').textContent=new Date().getFullYear();
+
+// Orari: evidenzia oggi e mostra se siamo aperti (fuso Europe/Rome)
+(function(){
+  const SLOTS=[[8*60,13*60],[14*60+30,18*60+30]];
+  const OPEN_DAYS=[1,2,3,4,5];
+  const NAMES=['domenica','lunedì','martedì','mercoledì','giovedì','venerdì','sabato'];
+  const fmt=m=>String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0');
+  const parts=new Intl.DateTimeFormat('en-US',{timeZone:'Europe/Rome',weekday:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date());
+  const get=t=>parts.find(p=>p.type===t).value;
+  const day={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[get('weekday')];
+  const now=(+get('hour')%24)*60+(+get('minute'));
+  document.querySelectorAll('#hours li').forEach(li=>li.classList.toggle('today',+li.dataset.d===day));
+  const el=document.getElementById('openStatus'); if(!el)return;
+  let txt,cls='closed';
+  const slot=OPEN_DAYS.includes(day)?SLOTS.find(s=>now>=s[0]&&now<s[1]):null;
+  if(slot){cls='open';txt='Aperto ora · chiude alle '+fmt(slot[1]);}
+  else{
+    const next=OPEN_DAYS.includes(day)?SLOTS.find(s=>now<s[0]):null;
+    if(next){txt='Chiuso ora · riapre alle '+fmt(next[0]);}
+    else{
+      let d=day,n=0; do{d=(d+1)%7;n++}while(!OPEN_DAYS.includes(d));
+      txt='Chiuso ora · riapre '+(n===1?'domani':NAMES[d])+' alle '+fmt(SLOTS[0][0]);
+    }
+  }
+  el.textContent=txt; el.className='status '+cls;
+})();
 
 // Preloader: l'auto completa il passaggio corrente (5 s), poi la pagina appare
 (function(){
