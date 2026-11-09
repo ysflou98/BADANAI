@@ -24,12 +24,8 @@ Landing page responsive per l'Autocarrozzeria Badanai (autoriparazioni dal 1981)
 ## Come usarlo
 Apri `index.html` in un browser, tenendo `logo-badanai.png` nella stessa cartella.
 
-## Conformità: da completare prima della pubblicazione
-I dati societari mancanti sono segnati in giallo come `[...]` (classe `todo`). Per trovarli tutti:
-
-    grep -n 'class="todo"' *.html
-
-Non pubblicare finché il comando non restituisce nulla.
+## Dati societari da aggiungere
+Il footer e le pagine legali riportano per ora solo nome e P. IVA. Quando saranno disponibili vanno aggiunti sede legale, codice fiscale, REA/CCIAA, PEC e, per le società di capitali, capitale sociale (footer in `index.html`, `privacy.html`, `note-legali.html`).
 
 ## Come bloccare un cookie non tecnico
     <script type="text/plain" data-consent="statistiche" data-src="https://esempio.it/stats.js"></script>
