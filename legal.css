@@ -1,3 +1,8 @@
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/inter-latin-400-normal.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/inter-latin-500-normal.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/inter-latin-600-normal.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/inter-latin-700-normal.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:800;font-display:swap;src:url('fonts/inter-latin-800-normal.woff2') format('woff2')}
 :root{
   --bg:#121212;--bg-2:#1A1521;--accent:#F39C3B;--accent-2:#e68a22;
   --accent-soft:rgba(243,156,59,.13);--glass:rgba(255,255,255,.045);--glass-hi:rgba(255,255,255,.075);
@@ -57,3 +62,12 @@ footer.lf a:hover{color:var(--accent)}
   .table th,.table td{padding:.6rem .4rem}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* Dati societari e link legali nel footer */
+footer.lf .co{width:min(1160px,100% - 40px);margin:0 auto 1.2rem;padding-bottom:1.2rem;border-bottom:1px solid var(--line);line-height:1.7}
+footer.lf .co strong{color:#fff}
+footer.lf button.linklike{background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+footer.lf button.linklike:hover{color:var(--accent)}
+mark.todo{background:#ffe066;color:#1a1521;padding:.05em .4em;border-radius:5px;font-weight:600;font-size:.92em}
+.card button.linklike.inline{background:none;border:0;padding:0;font:inherit;font-weight:600;color:var(--accent);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.card code{background:rgba(255,255,255,.08);padding:.1em .4em;border-radius:6px;font-size:.9em;color:#fff}

@@ -1,0 +1,56 @@
+/* Banner e preferenze cookie – Autocarrozzeria Badanai */
+.cc-banner[hidden],.cc-overlay[hidden],[data-consent-placeholder][hidden]{display:none!important}
+html.cc-lock{overflow:hidden}
+
+.cc-banner,.cc-modal{
+  --cc-accent:var(--accent,#F39C3B);
+  --cc-line:rgba(255,255,255,.12);
+  font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  color:#ECEAF0;line-height:1.55;
+  background:rgba(22,18,29,.97);
+  border:1px solid rgba(243,156,59,.45);
+  box-shadow:0 1px 0 rgba(255,255,255,.06) inset,0 28px 60px -20px rgba(0,0,0,.85);
+}
+.cc-banner{position:fixed;z-index:9000;left:22px;bottom:22px;width:min(640px,100% - 44px);padding:1.4rem 1.5rem 1.3rem;border-radius:18px;
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);animation:cc-in .45s cubic-bezier(.22,.8,.3,1)}
+.cc-title{font-size:1.05rem;font-weight:700;margin:0 2rem .5rem 0}
+.cc-text{font-size:.9rem;color:#cfcad8;margin:0 0 1rem}
+.cc-text strong{color:#fff}
+.cc-links{white-space:nowrap}
+.cc-links a{color:var(--cc-accent);font-weight:600;text-decoration:none}
+.cc-links a:hover{text-decoration:underline}
+.cc-x{position:absolute;top:.7rem;right:.7rem;width:34px;height:34px;border-radius:50%;border:1px solid var(--cc-line);background:rgba(255,255,255,.05);color:#ECEAF0;font-size:1.25rem;line-height:1;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.cc-x:hover{border-color:var(--cc-accent);color:var(--cc-accent)}
+
+.cc-actions{display:flex;flex-wrap:wrap;gap:.6rem}
+.cc-btn{flex:1 1 140px;font:inherit;font-weight:700;font-size:.9rem;padding:.75rem 1.1rem;border-radius:999px;cursor:pointer;border:1px solid transparent;transition:transform .2s,filter .2s,background .2s,border-color .2s,color .2s}
+.cc-btn:hover{transform:translateY(-2px)}
+/* "Rifiuta" e "Accetta tutti" hanno lo stesso aspetto: pari evidenza */
+.cc-main{background:linear-gradient(180deg,#f7ad5a,var(--cc-accent) 60%,#e68a22);color:#1a1521;box-shadow:0 8px 18px -10px rgba(243,156,59,.8)}
+.cc-main:hover{filter:brightness(1.07)}
+.cc-ghost{background:transparent;color:#ECEAF0;border-color:rgba(255,255,255,.28)}
+.cc-ghost:hover{border-color:var(--cc-accent);color:var(--cc-accent);background:rgba(243,156,59,.1)}
+.cc-banner :focus-visible,.cc-modal :focus-visible{outline:2px solid var(--cc-accent);outline-offset:3px}
+
+.cc-overlay{position:fixed;inset:0;z-index:9100;display:grid;place-items:center;padding:1rem;background:rgba(5,4,8,.72);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.cc-modal{position:relative;width:min(560px,100%);max-height:calc(100vh - 2rem);overflow:auto;padding:1.6rem;border-radius:18px}
+.cc-cats{list-style:none;margin:0 0 1.3rem;padding:0;display:grid;gap:.7rem}
+.cc-cat{padding:.9rem 1rem;border:1px solid var(--cc-line);border-radius:14px;background:rgba(255,255,255,.04)}
+.cc-cat-head{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.cc-cat-head label{font-weight:600;font-size:.95rem;cursor:pointer}
+.cc-cat p{margin:.35rem 0 0;font-size:.85rem;color:#b9b4c4}
+.cc-sw{appearance:none;-webkit-appearance:none;flex:none;position:relative;width:44px;height:26px;border-radius:999px;background:rgba(255,255,255,.18);border:1px solid var(--cc-line);cursor:pointer;transition:background .25s}
+.cc-sw::after{content:"";position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;background:#fff;transition:transform .25s cubic-bezier(.22,.8,.3,1)}
+.cc-sw:checked{background:var(--cc-accent)}
+.cc-sw:checked::after{transform:translateX(18px);background:#1a1521}
+.cc-sw:disabled{opacity:.55;cursor:not-allowed}
+
+@keyframes cc-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+@media (max-width:820px){
+  .cc-banner{left:0;right:0;bottom:0;width:auto;max-height:82vh;overflow:auto;border-radius:18px 18px 0 0;border-width:1px 0 0;
+    padding:1.2rem max(16px,env(safe-area-inset-left,0px)) calc(1.1rem + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-right,0px))}
+  .cc-x{right:max(.7rem,env(safe-area-inset-right,0px))}
+}
+@media (max-width:420px){.cc-btn{flex-basis:100%}}
+@media (prefers-reduced-motion:reduce){.cc-banner{animation:none}.cc-btn,.cc-sw,.cc-sw::after{transition:none}}
